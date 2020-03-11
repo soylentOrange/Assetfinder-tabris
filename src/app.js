@@ -20,7 +20,7 @@ const clientId = 'Assetfinder_' + Math.random().toString(16).substr(2, 8);
 const statusTopic = '/HealthCAT/Assetfinder/' + clientId;
 
 // Create a client instance
-const client = new Paho.Client('ws://mqtt.eclipse.org:80/mqtt', clientId);
+const client = new Paho.Client('wss://mqtt.eclipse.org:443/mqtt', clientId);
 
 // Show status on simple TextView
 const textView = new TextView({
